@@ -1,0 +1,84 @@
+[
+    {
+        "id": 20,
+        "name": "Поехали",
+        "city": "Волковыск",
+        "street": "Жёлтая",
+        "building": "23",
+        "block": null,
+        "mobile": "0295465767",
+        "phone": "4353464566",
+        "email": "jhk@tut.by",
+        "site": "dfgd.com",
+        "classCategories": [
+            {
+                "id": 8,
+                "name": "Кафе",
+                "domainCategory": {
+                    "id": 1,
+                    "name": "Еда, развлечения"
+                }
+            },
+            {
+                "id": 1,
+                "name": "Кофейня",
+                "domainCategory": {
+                    "id": 1,
+                    "name": "Еда, развлечения"
+                }
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Компьютеры",
+        "city": "Минск",
+        "street": "Правды",
+        "building": "32",
+        "block": null,
+        "mobile": "0294545355",
+        "phone": "3423454355",
+        "email": "erer@mail.ru",
+        "site": "oio.by",
+        "classCategories": [
+            {
+                "id": 16,
+                "name": "Маршрутное такси",
+                "domainCategory": {
+                    "id": 3,
+                    "name": "Транспорт"
+                }
+            },
+            {
+                "id": 12,
+                "name": "Институт",
+                "domainCategory": {
+                    "id": 2,
+                    "name": "Образование"
+                }
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Пицца",
+        "city": "Смоленск",
+        "street": "Мирная",
+        "building": "32",
+        "block": "3",
+        "mobile": "0295346433",
+        "phone": "3453454355",
+        "email": "dgd@mail.ru",
+        "site": "ljkl.by",
+        "classCategories": [
+            {
+                "id": 18,
+                "name": "Пиццерия",
+                "domainCategory": {
+                    "id": 1,
+                    "name": "Еда, развлечения"
+                }
+            }
+        ]
+    }
+]

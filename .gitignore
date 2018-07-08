@@ -1,0 +1,9 @@
+target/
+styles.scss.cache
+build/reports/tests
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

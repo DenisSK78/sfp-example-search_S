@@ -1,0 +1,188 @@
+// If you edit this file you need to compile the theme. See README.md for details.
+// Global variable overrides. Must be declared before importing Valo.
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+//$v-font-size: 16px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: #FEFEFE;
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+$v-font-family: "Droid Sans", sans-serif;
+@import "../valo/valo.scss";
+
+@mixin sfp {
+  @include font-face('Droid Sans', '../../../../sfp/fonts/droid-sans', normal, normal);
+  @include valo;
+  // Insert your own theme rules here
+
+  $v-background-color : #FEFEFE;
+
+  .v-button {
+    width: 217px;
+    height: 45px;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    box-shadow: none;
+    &:hover {
+      &:after {
+        background-color: transparent;
+      }
+    }
+    &:focus {
+      &:after {
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .searchTextField {
+    height: 45px;
+    width: 780px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #B2B2B2;
+    &:hover {
+      &:after {
+        background-color: transparent;
+      }
+    }
+    &:focus {
+      box-shadow: none;
+      border: 1px solid #B2B2B2;
+      &:after {
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .buttonSearchNameOff {
+    @extend .sfp-button;
+    height: 45px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #898989;
+    border-left: 0;
+    background: #DEDEDE;
+    &:hover {
+      background-color: #DEDEDE;
+    }
+    &:active {
+      background-color: #DEDEDE;
+    }
+  }
+
+  .buttonSearchNameOn {
+    @extend .buttonSearchNameOff;
+    background: #25ced1;
+    &:hover {
+      background-color: #21A7A9;
+    }
+    &:active {
+      background-color: #2D3E50;
+    }
+  }
+
+  .tagClassCategory {
+    font-size: 14px;
+    border-radius: 3px;
+    height: 25px;
+    width: auto;
+    margin-right: 14px;
+    margin-bottom: 7px;
+    background: #ff8a5b;
+    &:hover {
+      background-color: #db7349;
+    }
+    &:active {
+      background-color: #2D3E50;
+      border-radius: 1px;
+    }
+  }
+
+  .serviceProviderInfoLayout{
+    width: 930px;
+    border-bottom: 1px solid #DCDCDC;
+  }
+
+  .underline {
+    width: auto;
+    border-bottom: 1px solid #2C3D4F;
+  }
+
+  .searchNameLayout{
+    width: 930px;
+    margin-top: 10%;
+  }
+
+  .addressLabel{
+    width: 930px;
+    margin-top: 12px;
+    margin-bottom: 28px;
+    font-size: 15px;
+    color: #8d8d8d;
+    font-weight: 300;
+  }
+
+  .resultSearchLabel {
+    width: 930px;
+    height: 20px;
+    font-size: 15px;
+    font-style: oblique;
+    color: #8d8d8d;
+    margin-top: 20px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 18px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #dfdfdf;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #2d3e50;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0D222F;
+  }
+
+  .sPSearchNameLabel{
+    width: 930px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2C3D4F;
+  }
+
+  .v-loading-indicator {
+    background-color: #25ced1;
+  }
+
+  .tagClassCategoryLayout{
+    margin-bottom: 20px;
+  }
+
+  .hiddenLabel{
+    color: $v-background-color;
+  }
+}
